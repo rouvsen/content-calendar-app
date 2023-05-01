@@ -1,0 +1,69 @@
+###
+POST http://localhost:8080/api/v1/students
+Content-Type: application/json
+
+{
+  "name": "Bilal",
+  "email": "bilal.ahmed@gmail.com",
+  "dob": "1995-12-17"
+}
+
+<> 2023-04-17T005907.500.json
+<> 2023-04-17T005736.500.json
+
+###
+GET http://localhost:8080/api/v1/students
+
+<> 2023-04-17T012103.200.json
+<> 2023-04-17T005858.200.json
+<> 2023-04-17T005843.200.json
+<> 2023-04-17T005721.200.json
+<> 2023-04-17T005655.200.json
+
+###
+DELETE http://localhost:8080/api/v1/students/1
+
+<> 2023-04-17T012158.500.json
+
+###
+PUT http://localhost:8080/api/v1/students/2?name=maria5&email=maria5@gmail.com
+Content-Type: application/json
+
+###
+GET http://localhost:8080/api/content
+
+<> 2023-04-30T222014.200.json
+<> 2023-04-30T221950.404.json
+
+###
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "  ",
+  "desc": "Second Description",
+  "status": "IDEA",
+  "contentType": "ARTICLE",
+  "dateCreated": "2023-04-30T23:04:22.492133313",
+  "dateUpdated": null,
+  "url": ""
+}
+
+###
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Updated Title 111",
+  "desc": "Updated Description 111",
+  "status": "IDEA",
+  "contentType": "ARTICLE",
+  "dateCreated": "2023-04-30T23:04:22.492133313",
+  "dateUpdated": "2023-04-30T23:32:22.492133313",
+  "url": "http://localhost:8080/Download/images/image1.jpeg"
+}
+
+###
+DELETE http://localhost:8080/api/content/1
