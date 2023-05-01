@@ -2,6 +2,7 @@ package com.rouvsen.controller;
 
 import com.rouvsen.model.Content;
 import com.rouvsen.repository.ContentCollectionRepository;
+import com.rouvsen.repository.ContentJdbcTemplateRepository;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +16,7 @@ import java.util.List;
 public class ContentController {
 
     private final ContentCollectionRepository repository;
+//    private final ContentJdbcTemplateRepository repository;
 
     public ContentController(ContentCollectionRepository repository) {
         this.repository = repository;
