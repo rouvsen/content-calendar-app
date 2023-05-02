@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@Repository
+//@Repository
 public class ContentCollectionRepository {
 
     private final List<Content> contentList = new ArrayList<>();
@@ -34,7 +34,7 @@ public class ContentCollectionRepository {
         return content;
     }
 
-    @PostConstruct
+//    @PostConstruct
     private void init(){
         Content content = new Content(1,
                 "First Title",
