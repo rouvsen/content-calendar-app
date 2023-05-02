@@ -12,6 +12,7 @@ public record Content(
         Integer id,
         @NotBlank
         String title,
+        @Column("description")
         String desc,
         Status status,
         Type contentType,
