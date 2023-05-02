@@ -1,0 +1,30 @@
+[{
+    "id": null,
+    "title": "Updated Title 111",
+    "desc": "Updated Description 111",
+    "status": "IDEA",
+    "contentType": "ARTICLE",
+    "dateCreated": "2023-04-30T23:04:22.492133313",
+    "dateUpdated": null,
+    "url": "http://localhost:8080/Download/images/image1.jpeg"
+  },
+  {
+    "id": null,
+    "title": "Updated Title 222",
+    "desc": "Updated Description 222",
+    "status": "IDEA",
+    "contentType": "ARTICLE",
+    "dateCreated": "2023-04-30T23:04:22.492133313",
+    "dateUpdated": null,
+    "url": "http://localhost:8080/Download/images/image2.jpeg"
+  },
+  {
+    "id": 1,
+    "title": "Updated Title 333",
+    "desc": "Updated Description 333",
+    "status": "IDEA",
+    "contentType": "ARTICLE",
+    "dateCreated": "2023-04-30T23:04:22.492133313",
+    "dateUpdated": null,
+    "url": "http://localhost:8080/Download/images/image3.jpeg"
+  }]
