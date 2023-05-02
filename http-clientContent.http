@@ -32,9 +32,6 @@ Content-Type: application/json
 ###
 GET http://localhost:8080/api/content
 
-<> 2023-04-30T222014.200.json
-<> 2023-04-30T221950.404.json
-
 ###
 POST http://localhost:8080/api/content
 Content-Type: application/json
