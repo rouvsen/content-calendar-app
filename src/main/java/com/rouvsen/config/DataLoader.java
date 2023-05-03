@@ -15,7 +15,7 @@ import java.util.List;
 //@Profile("!dev")//dev (development-time) olmayan zaman ishlesin Bean
 //@Profile({"dev", "production"}) //dev ve production zamani ishlesin
 
-@Component //or you can use directly @Configuration
+//@Component //or you can use directly @Configuration
 //because @Configuration contains @Component
 public class DataLoader implements CommandLineRunner {
 
