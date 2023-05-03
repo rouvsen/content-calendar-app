@@ -31,12 +31,20 @@ public class DataLoader implements CommandLineRunner {
     public void run(String... args) throws Exception {
         try(InputStream inputStream = TypeReference.class.getResourceAsStream("/data/content.json"))
         {
-            repository.saveAll(
-                    objectMapper.readValue(
-                            inputStream,
-                            new TypeReference<List<Content>>(){}
-                    )
-            );
+            /**
+             repository.count() == 0 ifadesi,
+             veri deposunda kaydedilmiş hiçbir öğe olmadığını kontrol eder.
+             Eğer veri deposunda öğe yoksa,
+             repository.saveAll() metodu çağrılır.
+             */
+            if (repository.count() == 0){
+                repository.saveAll(
+                        objectMapper.readValue(
+                                inputStream,
+                                new TypeReference<List<Content>>(){}
+                        )
+                );
+            }
         }
     }
 }
